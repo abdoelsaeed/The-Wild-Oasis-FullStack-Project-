@@ -1,10 +1,11 @@
-## The Wild Oasis – Hotel Management Dashboard
+## The Wild Oasis – Hotel Management Dashboard 
 
 An opinionated, full‑stack-ish React application for managing a small boutique hotel: cabins, bookings, guests, and operations.  
 This project is built as a teaching/learning codebase and showcases modern React patterns, data‑fetching with React Query, and a hosted backend with Supabase.
 
 ---
-
+## Demo
+- **https://wild-oasis29.netlify.app/login
 ## Features
 
 - **Authentication & Users**
@@ -135,21 +136,6 @@ src/
 
 ---
 
-## Routing & Application Flow
-
-- **Entry point**: `src/main.jsx`
-  - Wraps the app in `React.StrictMode`.
-  - Uses `ErrorBoundary` from `react-error-boundary` with an `ErrorFallback` component.
-- **App shell**: `src/App.jsx`
-  - Provides:
-    - `DarkModeProvider` (dark/light theme context).
-    - `QueryClientProvider` + React Query Devtools.
-    - Global styles via `GlobalStyles`.
-    - `BrowserRouter` + route definitions.
-    - Toast notifications via `react-hot-toast` configured with custom styles.
-  - All main app routes (dashboard, bookings, cabins, settings, etc.) are wrapped in `ProtectedRoute`, which checks the authenticated user and redirects to `/login` if necessary.
-
----
 
 ## Data Layer & Supabase
 
@@ -215,8 +201,6 @@ Then update `src/services/supabase.js` to read from `import.meta.env` instead of
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
 const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
 ```
-
-> **Note**: The current code in this repo uses hard‑coded credentials for teaching/demo purposes. For any real deployment, move them to env variables as shown above.
 
 ### 3. Run the App in Development
 
