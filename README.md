@@ -5,7 +5,7 @@ This project is built as a teaching/learning codebase and showcases modern React
 
 ---
 ## Demo
-admin demo 
+ 
 Email: admin@admin.io
 Password: 12345678
 
