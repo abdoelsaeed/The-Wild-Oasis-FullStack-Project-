@@ -6,7 +6,7 @@ This project is built as a teaching/learning codebase and showcases modern React
 ---
 ## Demo
  
-## Email: admin@admin.io
+# Email: admin@admin.io
 ## Password: 12345678
 
 - **https://wild-oasis29.netlify.app/login
